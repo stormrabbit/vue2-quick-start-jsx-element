@@ -17,8 +17,9 @@ export default {
   },
 
   render() {
-    const { computedName, test, buildTest2, getDemoData, getDemoData2 } = this;
+    const { computedName, test, buildTest2, getDemoData, getDemoData2, a } = this;
     const c = '@babel/plugin-proposal-optional-chaining'
+    console.log(a?.d?.c)
     return (
       <div>
         {c }hello, {computedName}

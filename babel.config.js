@@ -10,6 +10,6 @@ module.exports = {
         "styleLibraryName": "theme-chalk"
       }
     ],
-    ["@babel/plugin-syntax-optional-chaining"]
+    "@babel/plugin-proposal-optional-chaining"
   ]
 }
