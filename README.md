@@ -144,3 +144,24 @@ export default {
 ```
 npm install --save-dev @babel/plugin-proposal-optional-chaining
 ```
+
+### 引入以及使用
+
+`babel.config.js`
+
+```
+module.exports = {
+  presets: [
+    '@vue/babel-preset-jsx'
+  ],
+  'plugins': [  
+    // ...
+    "@babel/plugin-proposal-optional-chaining"
+  ]
+}
+
+```
+
+```
+a?.b?.c?.d....
+```
