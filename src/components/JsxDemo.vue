@@ -1,8 +1,10 @@
 <script>
-import JsxChildDemo from "./JsxChildDemo";
+// import JsxChildDemo from "./JsxChildDemo";
 import { Button } from "element-ui";
 import { requestDemo } from "../api/demo";
+// import {renderComponent} from '../utils/renders'
 export default {
+  name: 'JsxDemo',
   data: () => ({
     name: "jsx",
     a: {
@@ -12,10 +14,13 @@ export default {
     },
   }),
   components: {
-    "jsx-child-demo": JsxChildDemo,
+    // "jsx-child-demo": JsxChildDemo,
     "el-button": Button,
   },
 
+  // created() {
+  //   renderComponent('JsxChildDemo')
+  // },
   render() {
     const { computedName, test, buildTest2, getDemoData, getDemoData2, a } = this;
     const c = '@babel/plugin-proposal-optional-chaining'

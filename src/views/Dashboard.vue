@@ -1,5 +1,5 @@
 <script>
-import JsxDemo from '../components/JsxDemo'
+import JsxDemo from '@/components/JsxDemo'
 export default {
     render() {
         return <JsxDemo />
