@@ -1,3 +1,7 @@
-import Vue from 'vue'
-export const renderComponent = (componentName) => Vue.component(componentName, () =>  import(`@/components/${componentName}.vue`))
-// export const renderComponent = (componentName) => () =>  import(`@/components/${componentName}.vue`)
+import Vue from "vue";
+export const installComponents = (name) => {
+  // request 代表下一个参数
+  Vue.component(name, () =>
+    import(/* webpackChunkName: "vue-[request]" */ `@/components/${name}.vue`)
+  );
+};
