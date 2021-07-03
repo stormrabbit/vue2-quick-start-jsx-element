@@ -13,7 +13,7 @@ export const formatDate = (date) => dayjs(date).format('YYYY-MM-DD')
  * @returns 
  */
 export function toHump(str = '') {
-    return str.replace(/\_(\w)/g, function(all, letter){
+    return str.replace(/_(\w)/g, function(all, letter){
         return letter.toUpperCase();
     });
 }
@@ -25,4 +25,8 @@ export function toHump(str = '') {
  */
 export function toLine(str) {
   return str.replace(/([A-Z])/g,"_$1").toLowerCase();
+}
+
+export const testLint = () => {
+console.log(12312)
 }
