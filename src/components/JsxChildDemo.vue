@@ -4,7 +4,7 @@ export default {
     props: {
         childValue: {
             type: String,
-            default: '默认值啊'
+            default: "默认值啊"
         } 
     },
 
